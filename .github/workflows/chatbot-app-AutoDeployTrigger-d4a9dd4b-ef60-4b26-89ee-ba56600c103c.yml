@@ -41,7 +41,7 @@ jobs:
           registryPassword: ${{ secrets.CHATBOTAPP_REGISTRY_PASSWORD }}
           containerAppName: chatbot-app
           resourceGroup: d-rgr-art-week-2025-2
-          imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
+          imageToBuild: default/chatbot-app:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
 
