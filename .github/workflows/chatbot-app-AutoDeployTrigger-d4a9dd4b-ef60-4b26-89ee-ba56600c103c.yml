@@ -36,7 +36,7 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
-          registryUrl: 
+          registryUrl: ${{ secrets.CHATBOTAPP_REGISTRY_URL }}
           registryUsername: ${{ secrets.CHATBOTAPP_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CHATBOTAPP_REGISTRY_PASSWORD }}
           containerAppName: chatbot-app
